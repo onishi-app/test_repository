@@ -18,3 +18,8 @@ push対象ファイル追加（-A で全て追加）
 
 GitHubにアップロード
 > git push -u origin <ブランチ名>
+
+pushに失敗したら次のコマンドでOKだよ
+> git fetch
+その次に
+> git merge
