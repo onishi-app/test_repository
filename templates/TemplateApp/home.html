@@ -1,0 +1,43 @@
+{% load event_tags %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {# <h1>Name: {{ my_name }}</h1> #}
+    {# <h2>果物: {{ favorite_fluits.2 }}</h2> #}
+    {# <h3>年齢: {{ my_info.age }}</h3> #}
+    <h1>{{ my_name }}</h1>
+    <ul>
+        {% for fruit in favorite_fluits %}
+            <li>{{ fruit }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if "grape" in favorite_fluits %}
+        <p>Grageはあります。</p>
+    {% elif "lemon" in favorite_fluits %}
+        <p>Lemonはあります。</p>
+    {% else %}
+        <p>Not Found.</p>
+    {% endif %}
+
+    {% if "age" in my_info %}
+        {% if my_info.age < 20 %}
+            <p>未成年です。</p>
+        {% else %}
+            <p>成人しています。</p>
+        {% endif %}
+    {% endif %}
+
+    {% if my_info.name != "Taro" %}
+        <p>Taroではありません。</p>
+    {% endif %}
+
+    <p>{{ status|status_to_string:"AAA" }}</p>
+</body>
+</html>
