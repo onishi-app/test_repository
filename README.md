@@ -1,4 +1,7 @@
 # GitHubにPushする手順
+オリジン追加
+> git remote add origin プッシュするURL
+
 管理情報表示
 > git status
 
