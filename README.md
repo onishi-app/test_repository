@@ -1,4 +1,6 @@
 # GitHubにPushする手順
+https://qiita.com/shizuma/items/2b2f873a0034839e47ce
+
 オリジン追加
 > git remote add origin プッシュするURL
 
