@@ -25,3 +25,5 @@ pushに失敗したら次のコマンドでOKだよ
 > git merge
 
 sampleですー。
+
+kintai branch
